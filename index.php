@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | กฤษณี ทิศขันธ์</title>
+    
+    <!-- ใช้ Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ใช้ AOS.js สำหรับ Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- เมนู Navigation -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.php">Welcome to Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.php">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.php">เกี่ยวกับฉัน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.php">ทักษะ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.php">ผลงาน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center">
+        <div class="container">
+            <img src="images/profile.jpg" class="rounded-circle shadow-lg mb-3" width="150" height="150" alt="รูปโปรไฟล์">
+            <h1 class="display-4 fw-bold">Grisanee Thitkhun</h1>
+            <p class="lead">เด็กไอซีที: สิ่งมีชีวิตที่นอนดึกเป็นกิจวัตร แก้บั๊กมากกว่าการบ้าน ใช้ ChatGPT เก่งกว่าจำสูตรคูณ</p>
+            <a href="about.php" class="btn btn-primary btn-lg mt-3">รู้จักฉันมากขึ้น</a>
+        </div>
+    </section>
+
+    <!-- Section ทักษะ -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">ทักษะของฉัน</h2>
+        <div class="row">
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="card shadow-sm p-3">
+                    <h3>📌 วิชาที่ถนัด</h3>
+                    <p>คอมพิวเตอร์, คณิตศาสตร์</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card shadow-sm p-3">
+                    <h3>🎥 ความสามารถพิเศษ</h3>
+                    <p>ตัดต่อวิดีโอ, เขียนโปรแกรม, ใช้ AI</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="card shadow-sm p-3">
+                    <h3>🛠 เครื่องมือที่ใช้งานได้</h3>
+                    <p>Photoshop, Canva, Microsoft Office, CapCut</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section ผลงาน -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">ผลงานของฉัน</h2>
+        <div class="row">
+            <div class="col-md-6" data-aos="flip-left">
+                <div class="card shadow-sm">
+                    <img src="images/project1.jpg" class="card-img-top" alt="โปรเจค 1">
+                    <div class="card-body">
+                        <h5 class="card-title">🎥 แข่งขันทำหนังสั้น</h5>
+                        <p class="card-text">"ของกินบ้านฉันในจานบ้านเธอ" ที่เข้าร่วมแข่งขันงานศิลปหัตถกรรมนักเรียนครั้งที่ 72</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="flip-right">
+                <div class="card shadow-sm">
+                    <img src="images/project2.jpg" class="card-img-top" alt="โปรเจค 2">
+                    <div class="card-body">
+                        <h5 class="card-title">🏆 สตาฟนักกีฬา</h5>
+                        <p class="card-text">ช่วยจัดการงานกีฬาสีโรงเรียนอุตรดิตถ์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 | Portfolio ของ กฤษณี ทิศขันธ์</p>
+    </footer>
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- เรียกใช้ AOS Animation -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
